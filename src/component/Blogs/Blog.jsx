@@ -1,9 +1,11 @@
 import React from 'react';
 import './Blog.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBookmark} from '@fortawesome/free-solid-svg-icons'
 
 const Blog = ({blog}) => {
     return (
-        <div>
+        <div className='blog-container'>
 
             <div className="poster-image">
             <img src={blog.posterImage} alt="" />
@@ -14,15 +16,22 @@ const Blog = ({blog}) => {
                     <div className='authorImage'>
                         <img src={blog.authorImage} alt="" />
                     </div>
-                    <div>
-                        <h4>{blog.authorName}</h4>
-                        <p>{blog.postTime}</p>
+                    <div className='authorinfo'>
+                        <h4 className='authorname'>{blog.authorName}</h4>
+                        <p className='postime'>{blog.postTime}</p>
                     </div>
                 </div>
-                <p>{blog.readTime}</p>
+                <p>{blog.readTime} <FontAwesomeIcon className='bookmark' icon={faBookmark} /></p>
             </div>
-            
-            <h2>{blog.title}</h2>
+
+            <div className="hastag">
+                <div className='fasthastag'>
+                    <p>#beginners</p>
+                </div>
+                <p>#programming</p>
+            </div>
+            <a href="#">Mark as read</a>
+            <h2 className='blog-title'>{blog.title}</h2>
         </div>
     );
 };

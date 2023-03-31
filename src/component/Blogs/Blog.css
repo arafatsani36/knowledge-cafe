@@ -1,5 +1,6 @@
 .poster-image img{
-    width: 75%;
+    width: 100%;
+    margin-top: 20px;
 }
 .info{
     display: flex;
@@ -7,9 +8,40 @@
 }
 .author{
     display: flex;
+    align-items: center;
 }
 .authorImage img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+.authorinfo{
+    margin-left: 20px;
+}
+.authorname{
+    margin-bottom: 0;
+}
+.postime{
+    margin-top: 0;
+}
+.blog-title{
+    margin-top: 10;
+}
+.blog-container{
+    border-bottom: 1px solid rgba(17, 17, 17, 0.15);
+}
+.blog-container:last-child{
+    border-bottom: none;
+}
+.hastag{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    margin-left: 5px;
+}
+.fasthastag{
+    margin-right: 10px;
+}
+.bookmark{
+    cursor: pointer;
 }
