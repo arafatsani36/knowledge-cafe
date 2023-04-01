@@ -3,6 +3,8 @@ import Blog from '../Blogs/Blog';
 
 import './Home.css'
 import Bookmarked from '../BookmarkedContainer/Bookmarked';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
     
@@ -18,9 +20,16 @@ const Home = () => {
 
     const handleBookmark = (bookmarks) => {
 
+      const books =  bookmarked.find(book => book.id == bookmarks.id);
+        if(books){
+            toast.error('already added')
+        }
+
+
         let newBook = [...bookmarked, bookmarks];
-       
          setBookmarked(newBook);
+
+
 
     }
 
@@ -43,6 +52,7 @@ const Home = () => {
                 <Bookmarked bookmarked={bookmarked} reads={reads}></Bookmarked>
             }        
             </div>
+            <ToastContainer></ToastContainer>
             
         </div>
     );

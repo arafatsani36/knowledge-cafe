@@ -1,9 +1,12 @@
 import React from 'react';
 import './Bookmarked.css'
 import { parse } from '@fortawesome/fontawesome-svg-core';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Bookmarked = ({bookmarked, reads}) => {
-   const book =  bookmarked.map(b => <p>{b.title}</p> )
+   const book =  bookmarked.map(b => <p key={b.id}>{b.title}</p>)
+
    console.log(reads)
 
    let read = 0;
@@ -23,8 +26,8 @@ const Bookmarked = ({bookmarked, reads}) => {
             <p className='bookmark'>{book}</p>
           
             </div>
-            
-        </div>
+            <ToastContainer></ToastContainer>
+        </div> 
     );
 };
 
