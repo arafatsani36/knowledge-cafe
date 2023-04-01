@@ -1,9 +1,10 @@
+
 import React from 'react';
 import './Blog.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBookmark} from '@fortawesome/free-solid-svg-icons'
 
-const Blog = ({blog}) => {
+const Blog = ({blog , handleBookmark}) => {
     return (
         <div className='blog-container'>
 
@@ -21,7 +22,7 @@ const Blog = ({blog}) => {
                         <p className='postime'>{blog.postTime}</p>
                     </div>
                 </div>
-                <p>{blog.readTime} <FontAwesomeIcon className='bookmark' icon={faBookmark} /></p>
+                <p>{blog.readTime} <FontAwesomeIcon onClick={() => handleBookmark(blog)} className='bookmark' icon={faBookmark} /></p>
             </div>
 
             <div className="hastag">

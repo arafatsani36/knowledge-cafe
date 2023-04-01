@@ -1,9 +1,13 @@
 import React from 'react';
+import './Bookmarked.css'
 
-const Bookmarked = () => {
+const Bookmarked = ({bookmarked }) => {
+   const book =  bookmarked.map(b => <p>{b.title}</p> )
+
     return (
         <div>
-            This is Book mark
+             <h4>add : {bookmarked.length}</h4>
+               <p className='bookmark'>{book}</p>
         </div>
     );
 };
