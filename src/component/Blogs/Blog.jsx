@@ -4,7 +4,7 @@ import './Blog.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBookmark} from '@fortawesome/free-solid-svg-icons'
 
-const Blog = ({blog , handleBookmark}) => {
+const Blog = ({blog , handleBookmark , readMore}) => {
     return (
         <div className='blog-container'>
 
@@ -22,7 +22,12 @@ const Blog = ({blog , handleBookmark}) => {
                         <p className='postime'>{blog.postTime}</p>
                     </div>
                 </div>
-                <p>{blog.readTime} <FontAwesomeIcon onClick={() => handleBookmark(blog)} className='bookmark' icon={faBookmark} /></p>
+
+                <div className='read'>
+                <p>{blog.readTime} min Read</p>
+                <i><FontAwesomeIcon onClick={() => handleBookmark(blog)} className='bookmark' icon={faBookmark} /></i>
+                </div>
+                
             </div>
 
             <div className="hastag">
@@ -31,7 +36,8 @@ const Blog = ({blog , handleBookmark}) => {
                 </div>
                 <p>#programming</p>
             </div>
-            <a href="#">Mark as read</a>
+            
+            <button onClick={() => readMore(blog)}>Mark as read</button>
             <h2 className='blog-title'>{blog.title}</h2>
         </div>
     );

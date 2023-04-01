@@ -14,6 +14,8 @@ const Home = () => {
     },[])
 
      const [bookmarked , setBookmarked] = useState([])
+     const [reads , setReads] = useState([])
+
     const handleBookmark = (bookmarks) => {
 
         let newBook = [...bookmarked, bookmarks];
@@ -22,18 +24,23 @@ const Home = () => {
 
     }
 
+    const readMore = (read) => {
+        let newRead = [...reads, read];
+        setReads(newRead);
+    }
+
 
 
     return (
         <div className='home-container'>
             <div className="blog-container">
                {
-                    blogs.map(blog => <Blog key={blog.id} blog={blog} handleBookmark={handleBookmark}></Blog>)
+                    blogs.map(blog => <Blog key={blog.id} blog={blog} handleBookmark={handleBookmark} readMore={readMore}></Blog>)
                }
             </div>
             <div className="sidebar-container">      
             {
-                <Bookmarked bookmarked={bookmarked}></Bookmarked>
+                <Bookmarked bookmarked={bookmarked} reads={reads}></Bookmarked>
             }        
             </div>
             

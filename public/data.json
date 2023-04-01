@@ -5,7 +5,7 @@
         "authorImage" :  "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/S/amzn-author-media-prod/2hketn162clln9c101hvcsfnm9.jpg",
         "authorName" : "Mr. Raju",
         "title" : "How to get your first job as a self-taught programmer",
-        "readTime" : "10 min read",
+        "readTime" : 10,
         "postTime" : "Mar 14 (17 Days ago)"
 
     },
@@ -15,7 +15,7 @@
         "authorImage" :  "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/S/amzn-author-media-prod/a3ohptss9l64463smi0o1m9kod._SX767_CR0%2C0%2C767%2C767_.jpg",
         "authorName" : "Mrs. Setara",
         "title" : "First, solve the problem. Then, write the code.",
-        "readTime" : "10 min read",
+        "readTime" : 10,
         "postTime" : "Mar 15 (16 Days ago)"
 
     },
@@ -25,7 +25,7 @@
         "authorImage" :  "https://static01.nyt.com/images/2015/07/13/arts/13BOOKSHEER-1436727900014x/13BOOKSHEER-1436727900014-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
         "authorName" : "Mina Mostofa",
         "title" : "Code is like humor. When you have to explain it, it’s bad.",
-        "readTime" : "12 min read",
+        "readTime" : 12,
         "postTime" : "Mar 16 (15 Days ago)"
 
     },
@@ -35,7 +35,7 @@
         "authorImage" :  "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/S/amzn-author-media-prod/qnq2dsjthoffdgtdj9g19v8gs2.jpg",
         "authorName" : "Asif Akbar",
         "title" : "Experience is the name everyone gives to their mistakes.",
-        "readTime" : "15 min read",
+        "readTime" : 15,
         "postTime" : "Mar 17 (14 Days ago)"
 
     }
