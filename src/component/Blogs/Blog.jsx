@@ -39,8 +39,13 @@ const Blog = ({blog , handleBookmark , readMore}) => {
             
             <button onClick={() => readMore(blog)}>Mark as read</button>
             <h2 className='blog-title'>{blog.title}</h2>
+
         </div>
+  
     );
 };
+
+
+
 
 export default Blog;
